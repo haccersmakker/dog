@@ -3,16 +3,16 @@ public class parent extends human {
     boolean hasJob;
 
     public parent(double agei, double highti, String genderi, String hairColori, String eyeColori, boolean hasJobi,
-            int numOfKidsi) {
-        super(agei, highti, genderi, hairColori, eyeColori);
+            int numOfKidsi, String namei) {
+        super(agei, highti, genderi, hairColori, eyeColori, namei);
         hasJob = hasJobi;
         numOfKids = numOfKidsi;
 
     }
 
     public parent(int agei, int highti, String genderi, String hairColori, String eyeColori, boolean hasJobi,
-            int numOfKidsi) {
-        super(agei, highti, genderi, hairColori, eyeColori);
+            int numOfKidsi, String namei) {
+        super(agei, highti, genderi, hairColori, eyeColori, namei);
         hasJob = hasJobi;
         numOfKids = numOfKidsi;
 

@@ -4,22 +4,25 @@ public class human {
     String gender;
     String hairColor;
     String eyeColor;
+    String name;
 
-    public human(double agei, double highti, String genderi, String hairColori, String eyeColori) {
+    public human(double agei, double highti, String genderi, String hairColori, String eyeColori, String namei) {
         age = agei;
         hight = highti;
         gender = genderi;
         hairColor = hairColori;
         eyeColor = eyeColori;
+        name = namei;
 
     }
 
-    public human(int agei, int highti, String genderi, String hairColori, String eyeColori) {
+    public human(int agei, int highti, String genderi, String hairColori, String eyeColori, String namei) {
         age = agei;
         hight = highti;
         gender = genderi;
         hairColor = hairColori;
         eyeColor = eyeColori;
+        name = namei;
     }
 
     public void setAge(double inputAge) {
@@ -29,6 +32,8 @@ public class human {
     public void setHight(double inputHight) {
         hight = inputHight;
     }
+
+    public void setName(String inputName){name = inputName;}
 
     public double getAge() {
         return age;
@@ -50,9 +55,11 @@ public class human {
         return gender;
     }
 
+    public String getName(){return name;}
+
     public String toString() {
-        return "The age is " + age + " the hight is " + hight + " the gender is " + gender + " the hair color is "
-                + hairColor + " the eye color is " + eyeColor + ".";
+        return name + "'s age is " + age + " their hight is " + hight + " their gender is " + gender + " their hair color is "
+                + hairColor + " their eye color is " + eyeColor + ".";
     }
 
 }

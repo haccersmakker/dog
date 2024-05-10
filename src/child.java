@@ -4,16 +4,16 @@ public class child extends human {
     boolean hasParents;
 
     public child(double agei, double highti, String genderi, String hairColori, String eyeColori, String schooli,
-            boolean hasParentsi) {
-        super(agei, highti, genderi, hairColori, eyeColori);
+            boolean hasParentsi, String namei) {
+        super(agei, highti, genderi, hairColori, eyeColori, namei);
         school = schooli;
         hasParents = hasParentsi;
 
     }
 
     public child(int agei, int highti, String genderi, String hairColori, String eyeColori, String schooli,
-            boolean hasParentsi) {
-        super(agei, highti, genderi, hairColori, eyeColori);
+            boolean hasParentsi, String namei) {
+        super(agei, highti, genderi, hairColori, eyeColori, namei);
         school = schooli;
         hasParents = hasParentsi;
     }
