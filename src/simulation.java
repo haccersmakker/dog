@@ -30,8 +30,8 @@ class simulation {
             double age = ListOfPeople.get(i).getAge();
             ListOfPeople.get(i).setAge(age + 1);
             if(age >= 18 && ListOfPeople.get(i) instanceof child){
+                System.out.println("\n" + ListOfPeople.get(i).getName() + " is now a parent");
                 parentify(ListOfPeople.get(i));
-                System.out.println(ListOfPeople.get(i).getName() + " is now a parent");
             }
         }
     }
@@ -40,9 +40,9 @@ class simulation {
         parent newParent = new parent(guy.getAge(), guy.getHight(), guy.getGender(), guy.getHairColor(), guy.getEyeColor(), false, 1, guy.getName());
         int lengthOfArray = ListOfPeople.size();
         for (int i = 0; i < lengthOfArray; i ++){
-            if(ListOfPeople.get(i).equals(guy.name));
-            ListOfPeople.remove(i);
-            ListOfPeople.add(newParent);
+            if(ListOfPeople.get(i).getName().equals(guy.name)) {
+                ListOfPeople.set(i, newParent);
+            }
         }
     }
 
